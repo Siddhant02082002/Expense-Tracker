@@ -39,10 +39,9 @@ const ExpenseFor = (props)=>{
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
-            date: new Date(enteredDate)
+            date: new Date(enteredDate),
         };
         props.onSaveExpenseData(expenseData);
-        console.log(expenseData);
         setEnteredAmount('');
         setEnteredTitle('');
         setEnteredDate(''); 
